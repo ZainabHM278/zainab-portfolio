@@ -36,9 +36,14 @@ export const toolbox = [
   "Metabase",
   "Docker",
   "React",
+  "Next.js",
   "TypeScript",
   "ASP.NET Core",
+  "PHP",
   "Laravel",
+  "Filament",
+  "Flutter",
+  "DigitalOcean",
   "Git",
 ];
 
