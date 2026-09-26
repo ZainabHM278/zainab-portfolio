@@ -52,7 +52,7 @@ export function SiteHeader() {
                   <Link
                     href={p.href}
                     aria-current={active ? "page" : undefined}
-                    className={`block py-3.5 transition-colors hover:text-ink ${active ? "text-ink" : "text-muted"}`}
+                    className={`block pt-3.5 transition-colors hover:text-ink ${active ? "border-b-2 border-sky pb-3 text-ink" : "pb-3.5 text-muted"}`}
                   >
                     {p.label}
                   </Link>
