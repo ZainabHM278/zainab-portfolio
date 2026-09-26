@@ -7,7 +7,7 @@ export default function Home() {
       <section className="container-page flex flex-col gap-5 pt-14 pb-12 lg:gap-7 lg:pt-32 lg:pb-24">
         <p className="eyebrow lg:text-[13px]">{profile.role}</p>
         <h1 className="font-serif text-[64px] leading-none tracking-[-0.02em] md:text-[96px] lg:text-[128px]">
-          Hi, I&apos;m <em>{profile.name}</em>.
+          Hi, I&apos;m <em>{profile.fullName}</em>.
         </h1>
         <p className="max-w-[760px] text-lg leading-[1.55] text-pretty text-muted lg:text-2xl lg:leading-normal">
           {profile.intro}

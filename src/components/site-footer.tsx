@@ -33,7 +33,7 @@ export function SiteFooter() {
             </ul>
           </nav>
           <p className="border-t border-muted pt-5 text-xs text-sky lg:border-0 lg:pt-0 lg:text-[13px]">
-            © {new Date().getFullYear()} {profile.name}
+            © {new Date().getFullYear()} {profile.fullName}
           </p>
         </div>
       </div>

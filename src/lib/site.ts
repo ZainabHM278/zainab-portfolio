@@ -2,6 +2,8 @@
 
 export const profile = {
   name: "Zainab",
+  fullName: "Zainab Almahal",
+  url: "https://zainab-portfolio-bay.vercel.app",
   role: "Junior Data Scientist | ML Engineer",
   intro:
     "I build data warehouses, statistical models and LLM-powered analytics tools — with a full-stack background in React, ASP.NET Core and Laravel for shipping them as real products.",

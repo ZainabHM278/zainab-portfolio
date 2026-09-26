@@ -25,11 +25,19 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(profile.url),
   title: {
-    default: `${profile.name} — ${profile.role}`,
-    template: `%s — ${profile.name}`,
+    default: `${profile.fullName} — ${profile.role}`,
+    template: `%s — ${profile.fullName}`,
   },
   description: profile.intro,
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: profile.fullName,
+    title: `${profile.fullName} — ${profile.role}`,
+    description: profile.intro,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
