@@ -15,6 +15,7 @@ export const work: JourneyEntry[] = [
     org: "Alelm Alsatea – Technology Solutions · Dammam",
     summary:
       "Designing, building and testing new web and mobile features, and keeping existing applications reliable and fast through maintenance, debugging and optimization.",
+    stack: ["React / Next.js", "Flutter", "PHP", "Laravel", "Filament", "REST APIs", "MySQL", "DigitalOcean", "Laravel Forge"],
   },
   {
     dates: "Jun 2025 — Aug 2025",
