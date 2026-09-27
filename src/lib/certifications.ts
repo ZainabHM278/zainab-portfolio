@@ -35,6 +35,7 @@ export const certifications: Certification[] = [
     issuer: "Amazon Web Services",
     code: "AIF-C01",
     issued: "Mar 2026",
+    verifyUrl: "https://cp.certmetrics.com/amazon/en/public/verify/credential/308be09bf6fc4fca811745046f541edd",
     practice: {
       title: "Fine-tuning a foundation model for financial topics",
       summary:
