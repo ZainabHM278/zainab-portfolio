@@ -26,9 +26,9 @@ export const paintings: Painting[] = [
 
 // Set username and url to show "Find me on…" and the Challenge button.
 export const chess = {
-  platform: "Chess.com",
-  username: null as string | null,
-  url: null as string | null,
+  platform: "Lichess",
+  username: "zooz33" as string | null,
+  url: "https://lichess.org/@/zooz33" as string | null,
   // Board shown beside it (FEN piece placement): the Italian Game.
   position: "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R",
 };
