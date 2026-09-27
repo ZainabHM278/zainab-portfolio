@@ -1,7 +1,8 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 // Breadcrumb, title and lede at the top of every inner page.
-export function PageIntro({ crumb, title, lede }: { crumb: string; title: string; lede: string }) {
+export function PageIntro({ crumb, title, lede }: { crumb: string; title: ReactNode; lede: string }) {
   return (
     <section className="container-page flex flex-col gap-5 pt-14 pb-12 lg:gap-6 lg:pt-28 lg:pb-20">
       <nav aria-label="Breadcrumb">
