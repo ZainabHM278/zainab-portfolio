@@ -21,6 +21,7 @@ export const certifications: Certification[] = [
     issuer: "Amazon Web Services",
     code: "MLA-C01",
     issued: "Jun 2026",
+    verifyUrl: "https://cp.certmetrics.com/amazon/en/public/verify/credential/22c7c62d811d45eab91f018461e18b9f",
     practice: {
       title: "Titanic survival prediction, end to end on AWS",
       summary:
