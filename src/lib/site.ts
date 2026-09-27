@@ -53,9 +53,9 @@ export const pages = [
   { href: "/projects", label: "Projects", num: "02" },
   { href: "/certifications", label: "Certifications", num: "03" },
   { href: "/learning", label: "Learning", menuLabel: "Learning & growth", num: "04" },
-  { href: "/life", label: "Life", menuLabel: "Hobbies & travel", num: "06" },
-  { href: "/repos", label: "Repos", num: "08" },
-  { href: "/contact", label: "Contact", num: "09" },
+  { href: "/life", label: "Life", menuLabel: "Hobbies", num: "06" },
+  { href: "/repos", label: "Repos", num: "07" },
+  { href: "/contact", label: "Contact", num: "08" },
 ];
 
 // The home page index: one row per section, some sharing a page.
@@ -65,10 +65,9 @@ export const sections = [
   { num: "03", title: "Certifications", blurb: "And the hands-on practice behind each one", href: "/certifications" },
   { num: "04", title: "Learning list", blurb: "What I'm learning now, and what's next", href: "/learning#list" },
   { num: "05", title: "Personal growth", blurb: "Lessons and habits I'm building", href: "/learning#growth" },
-  { num: "06", title: "Hobbies", blurb: "Reading, painting and chess", href: "/life#hobbies" },
-  { num: "07", title: "Travel", blurb: "Places that stayed with me", href: "/life#travel" },
-  { num: "08", title: "Repos", blurb: "Open source I learned from", href: "/repos" },
-  { num: "09", title: "Contact", blurb: "Say hello, or find me online", href: "/contact" },
+  { num: "06", title: "Hobbies", blurb: "Reading, painting, chess and more", href: "/life#hobbies" },
+  { num: "07", title: "Repos", blurb: "Open source I learned from", href: "/repos" },
+  { num: "08", title: "Contact", blurb: "Say hello, or find me online", href: "/contact" },
 ];
 
 // Links with a null href are hidden until filled in.
