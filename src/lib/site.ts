@@ -75,6 +75,6 @@ export const sections = [
 export const socials = [
   { label: "GitHub", href: "https://github.com/ZainabHM278" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/zainab-a-6a5b681b3" },
-  { label: "Hugging Face", href: "https://huggingface.co/ZainabHM278" },
-  { label: "Kaggle", href: null as string | null },
+  { label: "Hugging Face", href: "https://huggingface.co/ZainabAlmahal" },
+  { label: "Kaggle", href: "https://www.kaggle.com/zainabhalm" as string | null },
 ].filter((s): s is { label: string; href: string } => s.href !== null);

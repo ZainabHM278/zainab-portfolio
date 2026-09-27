@@ -31,7 +31,7 @@ export const projects: Project[] = [
     summary:
       "A bilingual English/Arabic tool that turns a business idea into revenue and cost projections, with an AI risk check on runway, margin and marketing spend. Selected as an AI Showcase Featured Project at the Kanz AI Training Hackathon, a Guinness World Records event with 14,075 participants.",
     stack: ["React", "TypeScript", "Tailwind", "Recharts", "EN / AR"],
-    links: [gh("BizStart-Simulator")],
+    links: [{ label: "Live demo", href: "https://biz-start-simulator--zainabh456.replit.app/" }, gh("BizStart-Simulator")],
     image: { src: "/projects/bizstart-simulator.png", alt: "BizStart Simulator business plan screen with monthly expenses, revenue projections and runway summary" },
   },
   {
@@ -41,16 +41,16 @@ export const projects: Project[] = [
     summary:
       "A LoRA fine-tune of Qwen2.5-0.5B that sorts financial tweets into 20 topics. Training just 0.22% of the parameters reached 90.5% test accuracy and 89.2% macro F1 on a held-out test set.",
     stack: ["LoRA", "Qwen2.5", "Transformers", "PEFT", "Kaggle"],
-    links: [gh("financial-topic-classifier")],
+    links: [{ label: "Hugging Face", href: "https://huggingface.co/ZainabAlmahal/financial-topic-classifier-lora" }, gh("financial-topic-classifier")],
     image: { src: "/projects/financial-topic-confusion-matrix.png", alt: "Confusion matrix across the 20 financial topic classes", fit: "contain" },
   },
   {
-    title: "CS Compass",
+    title: "PathFinder CS",
     kind: "AI agents",
     year: "2026",
     summary:
-      "A multi-agent advisory system that maps computer science graduates' skills to real tech job market data from Kaggle. Built during Google's 5-Day AI Agents Intensive with the Agent Development Kit and MCP.",
-    stack: ["Google ADK", "MCP", "Multi-agent"],
+      "A multi-agent career assistant: give it a resume and two Gemini agents report which job openings fit and which skills are missing, searching real job-market data through an MCP tool. Personal details are redacted before every model call. Built during Google and Kaggle's 5-Day AI Agents Intensive.",
+    stack: ["Google ADK", "MCP", "Gemini", "Multi-agent"],
     links: [gh("pathfinder-cs-agent")],
   },
   {
