@@ -77,3 +77,12 @@ export const socials = [
   { label: "Hugging Face", href: "https://huggingface.co/ZainabAlmahal" },
   { label: "Kaggle", href: "https://www.kaggle.com/zainabhalm" as string | null },
 ].filter((s): s is { label: string; href: string } => s.href !== null);
+
+// Contact page rows: where to find me, with the handle shown on each.
+export const contactLinks = [
+  { label: "LinkedIn", handle: "Zainab Almahal", href: "https://www.linkedin.com/in/zainab-a-6a5b681b3", note: "Best way to reach me" },
+  { label: "GitHub", handle: "ZainabHM278", href: "https://github.com/ZainabHM278" },
+  { label: "Hugging Face", handle: "ZainabAlmahal", href: "https://huggingface.co/ZainabAlmahal" },
+  { label: "Kaggle", handle: "zainabhalm", href: "https://www.kaggle.com/zainabhalm" },
+  { label: "Codewars", handle: "ZainabHM278", href: "https://www.codewars.com/users/ZainabHM278" },
+] as { label: string; handle: string; href: string; note?: string }[];

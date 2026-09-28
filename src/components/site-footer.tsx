@@ -20,25 +20,37 @@ function SocialLinks() {
   );
 }
 
-// Inner pages point on to the next page; the home page (and the last page) invite contact instead.
+// Inner pages point on to the next page, and the last page loops back to the index;
+// the home page (and anything outside the page list) invites contact instead.
 export function SiteFooter() {
   const pathname = usePathname();
   const index = pages.findIndex((p) => pathname.startsWith(p.href));
-  const next = index >= 0 ? pages[index + 1] : undefined;
+  const next = pages[index + 1];
+  const isLast = index === pages.length - 1;
+  const target =
+    index < 0
+      ? null
+      : isLast
+        ? { href: "/", kicker: "Back to the start", label: "Index" }
+        : { href: next.href, kicker: `Next · ${next.num}`, label: next.menuLabel ?? next.label };
 
   return (
     <footer className="bg-ink text-mist">
-      {next ? (
+      {target ? (
         <div className="container-page flex flex-col gap-10 pt-14 pb-8 lg:gap-14 lg:pt-20 lg:pb-12">
-          <Link href={next.href} className="group flex flex-col gap-3.5 self-start hover:text-sky">
-            <span className="font-mono text-xs tracking-[0.08em] text-sky uppercase">Next · {next.num}</span>
+          <Link href={target.href} className="group flex flex-col gap-3.5 self-start hover:text-sky">
+            <span className="font-mono text-xs tracking-[0.08em] text-sky uppercase">{target.kicker}</span>
             <span className="font-serif text-[44px] leading-none lg:text-[64px]">
-              {next.menuLabel ?? next.label}{" "}
+              {target.label}{" "}
               <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
             </span>
           </Link>
           <div className="flex flex-col gap-2 border-t border-muted pt-6 font-mono text-[13px] lg:flex-row lg:items-center lg:justify-between">
-            <Link href="/" className="self-start py-3 text-sky hover:text-mist">↑ Back to index</Link>
+            {isLast ? (
+              <p className="py-3 text-sky">© {new Date().getFullYear()} {profile.fullName}</p>
+            ) : (
+              <Link href="/" className="self-start py-3 text-sky hover:text-mist">↑ Back to index</Link>
+            )}
             <SocialLinks />
           </div>
         </div>
