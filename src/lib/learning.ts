@@ -4,9 +4,15 @@ export const updated = "Sep 2026";
 
 export type Status = "In progress" | "Done" | "Up next";
 
-export const learningList: { topic: string; where: string; status: Status }[] = [
+export const learningList: { topic: string; where: string; status: Status; href?: string }[] = [
   { topic: "Data Science & AI path", where: "Tuwaiq Academy (Satr) · 15 courses · 47% done", status: "In progress" },
   { topic: "Flutter App Development path", where: "Tuwaiq Academy (Satr) · 11 courses · just started", status: "In progress" },
+  {
+    topic: "One Codewars kata a day",
+    where: "Codewars · Python · 6 kyu",
+    status: "In progress",
+    href: "https://github.com/ZainabHM278/my-codewars-katas",
+  },
   { topic: "Laravel & Filament", where: "On the job + official docs", status: "In progress" },
   { topic: "Laravel Bootcamp — Chirper", where: "laravel.com", status: "In progress" },
   { topic: "SQL fluency", where: "12-week study plan", status: "In progress" },

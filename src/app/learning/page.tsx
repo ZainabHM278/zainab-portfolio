@@ -57,7 +57,15 @@ export default function LearningPage() {
               role="row"
               className="grid gap-2 border-t border-line py-5 md:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)_160px] md:items-center md:gap-8 md:py-[22px]"
             >
-              <span role="cell" className="text-[17px] font-medium lg:text-[19px]">{item.topic}</span>
+              <span role="cell" className="text-[17px] font-medium lg:text-[19px]">
+                {item.href ? (
+                  <a href={item.href} target="_blank" rel="noreferrer" className="border-b border-sky hover:text-muted">
+                    {item.topic} <span aria-hidden="true">↗</span>
+                  </a>
+                ) : (
+                  item.topic
+                )}
+              </span>
               <span role="cell" className="text-muted">{item.where}</span>
               <span role="cell" className="pt-1 md:pt-0"><StatusPill status={item.status} /></span>
             </div>
