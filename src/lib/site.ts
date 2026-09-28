@@ -66,7 +66,7 @@ export const sections = [
   { num: "04", title: "Learning list", blurb: "What I'm learning now, and what's next", href: "/learning#list" },
   { num: "05", title: "Personal growth", blurb: "Lessons and habits I'm building", href: "/learning#growth" },
   { num: "06", title: "Hobbies", blurb: "Reading, painting, chess and more", href: "/life#hobbies" },
-  { num: "07", title: "Repos", blurb: "Open source I learned from", href: "/repos" },
+  { num: "07", title: "Repos", blurb: "Open source I'm learning from", href: "/repos" },
   { num: "08", title: "Contact", blurb: "Say hello, or find me online", href: "/contact" },
 ];
 
